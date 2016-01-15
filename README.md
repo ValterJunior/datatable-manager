@@ -9,12 +9,12 @@ By using this class on your DataTable object you has a new layer over your table
 
 Just get the `datatable-manager.js` file and attach in your own project.
 
-## API Reference (Methods)
+## API Reference
 
     // Creating a new DataTable Manager object
     var man = new DataTableManager('dataTableID', 'fieldKey');
 
-### man.loadData(data)
+### loadData(data)
 
 Method to load a given array of JSON objects into the table data.
 
