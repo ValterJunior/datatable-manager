@@ -3,7 +3,7 @@
 ## Synopsis
 DataTable Manager is a **JavaScript** class that works as a controller for a given **"DataTable" object**. 
 
-By using this class on your DataTable object you has a new layer over your table to manage simple requests as an **edit** or **remove** rows. You can also load quickly data from a **array of JSON objects** and defines **fields** that are not be displayed on screen.
+By using this class on your DataTable object you has a new layer over your table to manage simple requests as an **edit** or **remove** rows. You can also load quickly data from a **array of JSON objects** and defines **fields** that are not to be displayed on screen.
 
 ## Installation
 
