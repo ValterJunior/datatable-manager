@@ -7,8 +7,8 @@ By using this class on your DataTable object you has a new layer over your table
 
 ## Installation
 
-Just get the `datatable-manager.js` file and attach in your own project.
-> Make sure that you also have a [DataTable plugin](https://www.datatables.net) attached in your project.
+Just get the `datatable-manager.js` file and attach to your own project.
+> Make sure that you also have a [DataTable plugin](https://www.datatables.net) attached to your project.
 
 ## API Reference
 
