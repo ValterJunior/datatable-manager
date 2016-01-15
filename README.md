@@ -8,11 +8,14 @@ By using this class on your DataTable object you has a new layer over your table
 ## Installation
 
 Just get the `datatable-manager.js` file and attach in your own project.
+> Make sure that you also have a [DataTable plugin](https://www.datatables.net) attached in your project.
 
 ## API Reference
 
-    // Creating a new DataTable Manager object
-    var man = new DataTableManager('dataTableID', 'fieldKey');
+```
+// Creating a new DataTable Manager object
+var man = new DataTableManager('dataTableID', 'fieldKey');
+```
 
 ### loadData(data)
 
@@ -20,12 +23,13 @@ Method to load a given array of JSON objects into the table data.
 
 #### Examples
 
-    // Array of JSON objects
-    var data = [ { id: '1', name: 'John', surname: 'Doe'  }, {id: '2', name: 'Luiza', surname: 'Silva'} ];
+```
+// Array of JSON objects
+var data = [ { id: '1', name: 'John', surname: 'Doe'  }, {id: '2', name: 'Luiza', surname: 'Silva'} ];
     
-    // Loading data from a given array of JSON objects
-    man.loadData( data );
-
+// Loading data from a given array of JSON objects
+man.loadData( data );
+```
 ## License (MIT)
 
 Copyright (c) Valter Junior ("Author")
