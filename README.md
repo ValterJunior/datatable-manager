@@ -5,10 +5,15 @@ DataTable Manager is a **JavaScript** class that works as a controller for a giv
 
 By using this class on your DataTable object you has a new layer over your table to manage simple requests as an **edit** or **remove** rows. You can also load quickly data from a **array of JSON objects** and defines **fields** that are not to be displayed on screen.
 
+## Requirements
+
+* [jQuery](https://jquery.com)
+* [DataTables plugin](https://www.datatables.net)
+
 ## Installation
 
 Just get the `datatable-manager.js` file and attach to your own project.
-> Make sure that you also have a [DataTable plugin](https://www.datatables.net) attached to your project.
+> Make sure that you also have a [DataTables plugin](https://www.datatables.net) attached to your project.
 
 ## API Reference
 
