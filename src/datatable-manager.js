@@ -160,7 +160,9 @@ DataTableManager.prototype.enableEditButton = function( enable ){
  */
 DataTableManager.prototype.loadData = function( data ){
 
-    if( data ){
+    if( data && data.length > 0 ){
+        
+        this.clear();
         
         for( var i = 0; i < data.length; i++ ){
             this.addRow(data[i]);    
