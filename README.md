@@ -17,7 +17,7 @@ Just get the `datatable-manager.js` file and attach to your own project.
 
 ## API Reference
 
-```
+```javascript
 // Creating a new DataTable Manager object
 var man = new DataTableManager('dataTableID', 'fieldKey');
 ```
@@ -29,7 +29,7 @@ Method to load a given array of JSON objects into the table data.
 
 ##### Examples
 
-```
+```javascript
 // Array of JSON objects
 var data = [ {id: '1', name: 'John', surname: 'Doe'}, {id: '2', name: 'Luiza', surname: 'Silva'} ];
     
@@ -43,7 +43,7 @@ Method to add a new row into the DataTable.
 
 ##### Examples
 
-```
+```javascript
 // JSON object as a new row
 var row = {id: '3', name: 'Jimmy', surname: 'Lanne'};
     
@@ -57,7 +57,7 @@ Replace values of a row with new values using the given key.
 
 ##### Examples
 
-```
+```javascript
 // JSON object to replace the row with id === '1'
 var row = {id: '1', name: 'Morgan', surname: 'Freeman'};
     
@@ -71,7 +71,7 @@ Replace values of a row with new values using a given position.
 
 ##### Examples
 
-```
+```javascript
 // JSON object to replace the row values in position 2
 var row = {id: '1', name: 'Morgan', surname: 'Freeman'};
     
@@ -85,7 +85,7 @@ Remove Datatable's row as well as the own data
 
 ##### Examples
 
-```
+```javascript
 // Removing row in position 2
 man.removeRowAndData(2);
 ```
@@ -96,7 +96,7 @@ Execute the edit action calling the OnEdit *callback* event.
 
 ##### Examples
 
-```
+```javascript
 // Calling the edit event from row in position 2.
 man.executeEdit(2);
 ```
@@ -107,7 +107,7 @@ Clear all data.
 
 ##### Examples
 
-```
+```javascript
 // Remove all data and rows from datatable
 man.clear();
 ```
@@ -118,7 +118,7 @@ Reload all data into the datatable's rows.
 
 ##### Examples
 
-```
+```javascript
 // Reloading all data 
 man.refresh();
 ```
@@ -129,7 +129,7 @@ Returns an array of JSON objects containing the data.
 
 ##### Examples
 
-```
+```javascript
 // Returns the data
 var data = man.getData();
 ```
@@ -140,7 +140,7 @@ Returns a JSON object containing the row values from a given position (index).
 
 ##### Examples
 
-```
+```javascript
 // Returns the row of position 2
 var row = man.getRow();
 ```
@@ -151,7 +151,7 @@ Return the row's position that contains the key value given.
 
 ##### Examples
 
-```
+```javascript
 // Returns the row position
 var index = man.getIndex('1'); // id = '1'
 ```
@@ -163,7 +163,7 @@ Return a JSON array data in a `string` format.
 
 ##### Examples
 
-```
+```javascript
 // Returns the data in string format
 var data = man.getDataToSTring(true);
 ```
@@ -174,7 +174,7 @@ Turns visible/hide the button to edit a **Datatable row**.
 
 ##### Examples
 
-```
+```javascript
 // Turning off the edit button
 man.enableEditButton(false);
 ```
@@ -185,7 +185,7 @@ Turns visible/hide the button to delete a **Datatable row**.
 
 ##### Examples
 
-```
+```javascript
 // Turning on the delete button
 man.enableEditButton(true);
 ```
@@ -198,7 +198,7 @@ Changes the CSS default of the edit button to a personal one.
 
 ##### Examples
 
-```
+```javascript
 // Changing the class CSS of the edit button
 man.setButtonEditCSSClass('my-own-class-btn');
 ```
@@ -209,7 +209,7 @@ Changes the CSS default of the edit icon from the edit button to a personal one.
 
 ##### Examples
 
-```
+```javascript
 // Changing the class CSS of the edit icon's button
 man.setIconEditCSSClass('my-own-class-icon');
 ```
@@ -220,7 +220,7 @@ Changes the CSS default of the remove button to a personal one.
 
 ##### Examples
 
-```
+```javascript
 // Changing the class CSS of the remove button
 man.setButtonRemoveCSSClass('my-own-class-btn');
 ```
@@ -231,7 +231,7 @@ Changes the CSS default of the remove icon from the remove button to a personal 
 
 ##### Examples
 
-```
+```javascript
 // Changing the class CSS of the remove icon's button
 man.setIconRemoveCSSClass('my-own-class-icon');
 ```
@@ -242,7 +242,7 @@ Array with name of fields to be hidden on grid.
 
 ##### Examples
 
-```
+```javascript
 // Hidding the surname field on grid.
 man.setHiddenFields(['surname']);
 ```
@@ -255,7 +255,7 @@ Event called when the field is printed on screen.
 
 ##### Examples
 
-```
+```javascript
 // Formatting the given column value before print on screen
 man.onPrint( 'id', function( value ){
    
@@ -273,7 +273,7 @@ Event called after delete a row
 
 ##### Examples
 
-```
+```javascript
 // Executing log message after delete a row
 man.onAfterDelete( function(){
     log.message('row deleted!');
@@ -286,7 +286,7 @@ Event called when editting a row.
 
 ##### Examples
 
-```
+```javascript
 // Executing log message after delete a row
 man.onEdit( function(row){
     log.message('The row id in edition is ' + row.id );
